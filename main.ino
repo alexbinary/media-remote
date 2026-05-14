@@ -7,8 +7,8 @@ const int batteryUpdatePeriodMs = 1 * 60 * 1000;
 unsigned long millis_lastBatteryUpdate = 0;
 
 const int numButtons = 8;
-const int buttons_pins[numButtons] = {D1,D2,D3,D4,D5,D6,D7,D8};
-const int buttons_keys[numButtons] = {KEY_UP_ARROW, KEY_DOWN_ARROW, KEY_LEFT_ARROW, KEY_RIGHT_ARROW, ' ', 'c', 'v', 'b'};
+const int buttons_pins[numButtons] = {D3,D4,D5,D6,D7,D8,D9,D10};
+const int buttons_keys[numButtons] = {' ', KEY_RIGHT_ARROW, 'b', 'c', 'v', KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_UP_ARROW};
 int button_previousState[numButtons] = {LOW};
 
 BleKeyboard bleKeyboard("Media Remote");
